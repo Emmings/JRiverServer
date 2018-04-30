@@ -10,7 +10,7 @@ RUN apt-get update \
 
 # Add JRiver packages to apt-get
  && wget -q "http://dist.jriver.com/mediacenter@jriver.com.gpg.key" -O- | apt-key add - \
- && wget http://dist.jriver.com/stable/mediacenter/mediacenter24jessie.list -O \
+ && wget http://dist.jriver.com/latest/mediacenter/mediacenter24.list -O \
 	/etc/apt/sources.list.d/mediacenter24.list \
 
 # Install JRiver and other required apps
