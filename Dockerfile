@@ -13,6 +13,9 @@ RUN apt-get update \
  && wget http://dist.jriver.com/latest/mediacenter/mediacenter24.list -O \
 	/etc/apt/sources.list.d/mediacenter24.list \
 
+# Install prerequisite packages RUN apt-get update \
+&& apt-get install -y curl libgnutls26
+	
 # Install JRiver and other required apps
  && apt-get update \
  && DEBIAN_FRONTEND=noninteractive apt-get install -y \
