@@ -1,6 +1,6 @@
 FROM debian:jessie
 
-ENV UPDATE yes
+ENV UPDATE no
 ENV VNCPASS jriver
 ENV MONITOR :1
 
