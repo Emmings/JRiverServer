@@ -13,8 +13,8 @@ RUN apt-get update \
  && wget http://dist.jriver.com/latest/mediacenter/mediacenter24.list -O \
 	/etc/apt/sources.list.d/mediacenter24.list \
 
-# Install prerequisite packages RUN apt-get update \
-# && apt-get install -y curl libgnutls26 \
+# Install libtool packages to avoid run errors
+&& apt-get install -y libtool \
 	
 # Install JRiver and other required apps
  && apt-get update \
